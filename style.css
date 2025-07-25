@@ -21,10 +21,27 @@
     --text-sm: 400 14px/160% var(--font-family);
 }
 
+/* utility-first */
+.grid {
+    display: grid;
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
+}
+
+/**/
+
 body {
     font: var(--text);
     color: var(--text-color-primary);
     background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1280px;
+    padding-inline: 32px;
+    margin-inline: auto;
 }
 
 a {
@@ -38,4 +55,34 @@ a:hover {
 
 h1, h2, h3 {
     font: inherit;
+}
+
+#primary {
+    padding-block: 20px;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 8px
+    }
+
+    /* nesting css */
+    div:nth-child(2) {
+        margin-inline: auto;
+        
+        img {
+            height: 60px;
+        }
+    }
+
+    div:nth-child(3) {
+        justify-self: end;
+    }
+}
+
+#secondary {
+    padding-block: 14px;
+    border: 1px solid var(--stroke-color);
+    border-inline: none;
+    justify-content: space-between;
 }

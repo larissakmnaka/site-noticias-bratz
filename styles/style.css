@@ -21,17 +21,6 @@
     --text-sm: 400 14px/160% var(--font-family);
 }
 
-/* utility-first */
-.grid {
-    display: grid;
-}
-
-.grid-flow-col {
-    grid-auto-flow: column;
-}
-
-/**/
-
 body {
     font: var(--text);
     color: var(--text-color-primary);
@@ -85,4 +74,12 @@ h1, h2, h3 {
     border: 1px solid var(--stroke-color);
     border-inline: none;
     justify-content: space-between;
+}
+
+main {
+    margin-top: 40px;
+}
+
+main img {
+    width: 100%;
 }

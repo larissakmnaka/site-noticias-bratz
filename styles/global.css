@@ -95,11 +95,3 @@ main img {
     color: var(--text-color-primary);
     box-shadow: 0px 4px 16px rgba(24, 3, 35, 0.25);
 }
-
-.title-limit {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}

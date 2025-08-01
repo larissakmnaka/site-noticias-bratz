@@ -1,3 +1,19 @@
+section header {
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--text-span);
+
+    a {
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+
+        &:hover span {
+            color: var(--brand-color-light);
+        }
+    }
+}
+
 #featured {
     img {
         height: 100%;
@@ -5,31 +21,36 @@
     }
 }
 
-.card {
-    position: relative;
-    border-radius: 4px;
-    overflow: hidden;
+#weekly {
 
-    &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        top: 50%;
-        background: linear-gradient(180deg, transparent 0%, var(--stroke-color) 100%);
+    &>div {
+        grid-template-columns: repeat(4, 292px);
     }
 
-    figcaption {
-        position: absolute;
-        bottom: 0;
+    img {
+        height: 160px;
+    }
 
-        padding: 24px;
+    strong {
+        font-weight: var(--h3);
+    }
 
-        &:has(.text-lg) {
-            padding: 12px;
+    span {
+        font-size: 14px;
+    }
+
+    figure {
+        position: relative;
+
+        .content-tag {
+            position: absolute;
+            top: 8px;
+            left: 8px;
         }
 
-        h2 {
+        p {
             margin-top: 8px;
+            font-weight: 800;
         }
     }
 }

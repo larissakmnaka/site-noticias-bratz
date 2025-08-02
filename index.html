@@ -3,7 +3,8 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=arrow_forward" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de Notícias | Bratz</title>
@@ -15,15 +16,19 @@
     <header class="container">
         <nav id="primary" class="grid grid-flow-col">
             <div>
-                <img src="./assets/icons/List.svg" alt="ícone de menu">
-                <strong>Menu</strong>
+                <a href="#">
+                    <ion-icon name="menu-outline"></ion-icon>
+                    <strong>Menu</strong>
+                </a>    
             </div>
             <div>
                 <a href="/"><img title="Bratz" src="./assets/logo-png.png" alt="logo Bratz"></a>
             </div>
             <div>
-                <strong>Buscar</strong>
-                <img src="./assets/icons/MagnifyingGlass.svg" alt="ícone de buscar">
+                <a href="#">
+                    <strong>Buscar</strong>
+                    <ion-icon name="search-outline"></ion-icon>
+                </a>    
             </div>
         </nav>
         <nav id="secondary" class="grid grid-flow-col">
@@ -42,9 +47,11 @@
                 <img src="./assets/images/1upscale.jpeg" alt="foto de estreia do Bratz Rock Angelz">
                 <figcaption>
                     <span class="content-tag">Música</span>
-                    <h2 class="text-2xl title-limit">
-                        Como garotas com paixão por moda viraram estrelas do rock?
-                    </h2>
+                    <a href="#">
+                        <h2 class="text-2xl title-limit">
+                            Como garotas com paixão por moda viraram estrelas do rock?
+                        </h2>
+                    </a>
                 </figcaption>
             </figure>
 
@@ -53,9 +60,11 @@
                     <img src="./assets/images/2xburger.jpg" alt="foto da Burdine comendo um monte de hamburguer">
                     <figcaption>
                         <span class="content-tag">Fofoca</span>
-                        <h2 class="text-lg title-limit">
-                            O que aconteceu com a  fundadora, presidente, editora chefe da revista seu lance e rainha da moda, vulgo rainha da maldade?
-                        </h2>
+                        <a href="#">
+                            <h2 class="text-lg title-limit">
+                                O que aconteceu com a  fundadora, presidente, editora chefe da revista seu lance e rainha da moda, vulgo rainha da maldade?
+                            </h2>
+                        </a>
                     </figcaption>
                 </figure>
 
@@ -63,9 +72,11 @@
                     <img src="./assets/images/3gmás.jpg" alt="foto das gêmeas Kirstee e Kaycee">
                     <figcaption>
                         <span class="content-tag">Fofoca</span>
-                        <h2 class="text-lg title-limit">
-                            Quem são as G más?
-                        </h2>
+                        <a href="#">
+                            <h2 class="text-lg title-limit">
+                                Quem são as G más?
+                            </h2>
+                        </a>
                     </figcaption>
                 </figure>
 
@@ -73,9 +84,11 @@
                     <img src="./assets/images/4upscale.jpeg" alt="foto das Bratz comemorando com a Roxxi">
                     <figcaption>
                         <span class="content-tag">Fofoca</span>
-                        <h2 class="text-lg title-limit">
-                            Com a separação da banda Crash, Roxxi entra na Bratz Rock Angelz
-                        </h2>
+                        <a href="#">
+                            <h2 class="text-lg title-limit">
+                                Com a separação da banda Crash, Roxxi entra na Bratz Rock Angelz
+                            </h2>
+                        </a>
                     </figcaption>
                 </figure>
 
@@ -83,9 +96,11 @@
                     <img src="./assets/images/5simnao.jpg" alt="foto das Bratz com símbolo de sim e da Burdine e gêmeas com símbolo de não">
                     <figcaption>
                         <span class="content-tag">Tendências</span>
-                        <h2 class="text-lg title-limit">
-                            Sim ou não?
-                        </h2>
+                        <a href="#">
+                            <h2 class="text-lg title-limit">
+                                Sim ou não?
+                            </h2>
+                        </a>
                     </figcaption>
                 </figure>
             </div>
@@ -97,43 +112,57 @@
                 <h3>Mais lidas da semana</h3>
                 <a href="#" class="grid grid-flow-col">
                     <strong>Ver tudo</strong>
-                    <span class="material-symbols-outlined">
-                    arrow_forward
-                    </span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
                 </a>
             </header>
 
             <div class="grid gap-16">
                 <figure>
-                    <span class="content-tag">Fofoca</span>
                     <img src="./assets/images/6revistas.jpg" alt="foto de várias pessoas lendo a revista Bratz">
-                    <p class="title-limit">
-                        A Revista do Momento!
-                    </p>
+                    <figcaption>
+                        <span class="content-tag">Fofoca</span>
+                        <a href="#">
+                            <p class="title-limit">
+                                A Revista do Momento!
+                            </p>
+                        </a>
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <span class="content-tag">Tendências</span>
                     <img src="./assets/images/7fotosjade.jpg" alt="fotos da moda de londres">
-                    <p class="title-limit">
-                        Moda londrina: lindo e punk, a última moda de Londres
-                    </p>
+                    <figcaption>
+                        <span class="content-tag">Tendências</span>
+                        <a href="#">
+                            <p class="title-limit">
+                                Moda londrina: lindo e punk, a última moda de Londres
+                            </p>
+                        </a>
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <span class="content-tag">Música</span>
                     <img src="./assets/images/8turne.jpg" alt="foto da turnê">
-                    <p class="title-limit">
-                        Bratz Rock Angelz em turnê mundial
-                    </p>
+                    <figcaption>
+                        <span class="content-tag">Música</span>
+                        <a href="#">
+                            <p class="title-limit">
+                                Bratz Rock Angelz em turnê mundial
+                            </p>
+                        </a>
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <span class="content-tag">Música</span>
                     <img src="./assets/images/9banda.jpg" alt="foto das Bratz com suas guitarras">
-                    <p class="title-limit">
-                        Como fazer sua própria banda de rock
-                    </p>
+                    <figcaption>
+                        <span class="content-tag">Música</span>
+                        <a href="#">
+                            <p class="title-limit">
+                                Como fazer sua própria banda de rock
+                            </p>
+                        </a>
+                    </figcaption>
                 </figure>
             </div>
 
@@ -144,18 +173,20 @@
                 <h3>Destaques</h3>
                 <a href="#" class="grid grid-flow-col">
                     <strong>Ver tudo</strong>
-                    <span></span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
                 </a>
             </header>
 
             <div class="grid gap-32">
 
-                <article class="grid grid-flow-col gap-16">
+                <article class="grid grid-highlight gap-16">
                     <div>
                         <span class="content-tag">Conselhos</span>
-                        <h3 class="text-xl title-limit">
-                            Teste BRATZ: seu namorado é um mané real?
-                        </h3>
+                        <a href="#">
+                            <h3 class="text-xl title-limit">
+                                Teste BRATZ: seu namorado é um mané real?
+                            </h3>
+                        </a>
                         <p class="text-sm paragraph-limit">
                             1. ele distrata as suas melhores amigas? se a resposta for sim, pode largar dele!
                         </p>
@@ -165,12 +196,14 @@
                     </div>
                 </article>
 
-                <article class="grid grid-flow-col gap-16">
+                <article class="grid grid-highlight gap-16">
                     <div>
                         <span class="content-tag">Estilo de vida</span>
-                        <h3 class="text-xl title-limit">
-                            Antes e depois do nosso escritório
-                        </h3>
+                        <a href="#">
+                            <h3 class="text-xl title-limit">
+                                Antes e depois do nosso escritório
+                            </h3>
+                        </a>
                         <p class="text-sm paragraph-limit">
                             Parecia que não tinha jeito: cheio de ratos e necessitado de um bom banho. Nossos sonhos e esperanças tudo pelos ares! Mas com alguns ajustes, como reforma e pintura, novas prateleiras, área de computadores e ajuda dos nossos amigos, arrasamos! O lugar ficou um máximo!
                         </p>
@@ -180,12 +213,14 @@
                     </div>
                 </article>
 
-                <article class="grid grid-flow-col gap-16">
+                <article class="grid grid-highlight gap-16">
                     <div>
                         <span class="content-tag">Entretenimento</span>
-                        <h3 class="text-xl title-limit">
-                            Dicas com os amigos
-                        </h3>
+                        <a href="#">
+                            <h3 class="text-xl title-limit">
+                                Dicas com os amigos
+                            </h3>
+                        </a>
                         <p class="text-sm paragraph-limit">
                             De skate à guerra com arminhas d’água – e claro, o melhor para levantar o astral: o shopping! Aqui estão as ideias mais estilosas para bombar o rolê.
                         </p>
@@ -195,12 +230,14 @@
                     </div>
                 </article>
 
-                <article class="grid grid-flow-col gap-16">
+                <article class="grid grid-highlight gap-16">
                     <div>
                         <span class="content-tag">Tendências</span>
-                        <h3 class="text-xl title-limit">
-                            Pontos turísticos em Londres
-                        </h3>
+                        <a href="#">
+                            <h3 class="text-xl title-limit">
+                                Pontos turísticos em Londres
+                            </h3>
+                        </a>
                         <p class="text-sm paragraph-limit">
                             Confira nossa recomendação de pontos turísticos em Londres para garotas com atitude! Dentre eles, Big Ben, Carnaby Street e London Eye para uma bela vista. Um roteiro de estrela do rock.
                         </p>
@@ -214,90 +251,99 @@
         </section>
 
 
-        <div>
+        <aside>
             <div id="ads">
-                <img src="./assets/publicidade.jpg" alt="Publicidade de Bratz Rock Angelz no Spotify">
-            </div>
-        </div>
-
-        <section id="more">
-            <header class="grid grid-flow-col">
-                <h3>Viu isso aqui?</h3>
-                <a href="#" class="grid grid-flow-col">
-                    <strong>Ver tudo</strong>
-                    <span></span>
+                <a target="_blank" href="https://open.spotify.com/intl-pt/album/4qRV5VWhGFeaXpFEYKIz4w?si=dkvz57keQP2pCFlq47IMNw">
+                    <img src="./assets/publicidade.png" alt="Publicidade de Bratz Rock Angelz no Spotify">
                 </a>
-            </header>
-
-            <div class="grid gap-32">
-                <article class="grid grid-flow-col gap-16">
-                    <div>
-                        <img src="./assets/images/14contrato.jpg" alt="Foto das Bratz com o Byron Powell">
-                    </div>
-                    <div>
-                        <span class="content-tag">Tendências</span>
-                        <h3 class="text-xl title-limit-minor">
-                            Byron Powell deu um maravilhoso contrato para gravar
-                        </h3>
-                    </div>
-                </article>
-
-                <article class="grid grid-flow-col gap-16">
-                    <div>
-                        <img src="./assets/images/15ozzi.jpg" alt="Foto do Byron Powell com o Ozzi">
-                    </div>
-                    <div>
-                        <span class="content-tag">Estilo de vida</span>
-                        <h3 class="text-xl title-limit-minor">
-                            Cuidados do Ozzy, bulldog fofo de Byron Powell
-                        </h3>
-                    </div>
-                </article>
-
-                <article class="grid grid-flow-col gap-16">
-                    <div>
-                        <img src="./assets/images/16pinz.jpg" alt="Foto da Yasmin e Jade mostrando os looks">
-                    </div>
-                    <div>
-                        <span class="content-tag">Tendências</span>
-                        <h3 class="text-xl title-limit-minor">
-                            Looks da inauguração exclusiva da Pinz
-                        </h3>
-                    </div>
-                </article>
-
-                <article class="grid grid-flow-col gap-16">
-                    <div>
-                        <img src="./assets/images/17lookshow.jpg" alt="Foto das Bratz mostrando os looks">
-                    </div>
-                    <div>
-                        <span class="content-tag">Tendências</span>
-                        <h3 class="text-xl title-limit-minor">
-                            Looks de estreia da banda
-                        </h3>
-                    </div>
-                </article>
-
-                <article class="grid grid-flow-col gap-16">
-                    <div>
-                        <img src="./assets/images/18podergarotas.jpg" alt="Foto da Jade jogando baseball">
-                    </div>
-                    <div>
-                        <span class="content-tag">Esportes</span>
-                        <h3 class="text-xl title-limit-minor">
-                            Vamos soltar o poder das garotas! 
-                        </h3>
-                    </div>
-                </article>
-
             </div>
+        
+            <section id="more">
+                <header class="grid grid-flow-col">
+                    <h3>Viu isso aqui?</h3>
+                    <a href="#" class="grid grid-flow-col">
+                        <strong>Ver tudo</strong>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </header>
 
-        </section>
+                <div class="grid gap-32">
+                    <article class="grid grid-col gap-16">
+                        <div>
+                            <img src="./assets/images/14contrato.jpg" alt="Foto das Bratz com o Byron Powell">
+                        </div>
+                        <div>
+                            <span class="content-tag">Tendências</span>
+                            <a href="#">
+                                <h3 class="text-xl title-limit-minor">
+                                    Byron Powell deu um maravilhoso contrato para gravar
+                                </h3>
+                            </a>
+                        </div>
+                    </article>
 
+                    <article class="grid grid-col gap-16">
+                        <div>
+                            <img src="./assets/images/15ozzi.jpg" alt="Foto do Byron Powell com o Ozzi">
+                        </div>
+                        <div>
+                            <span class="content-tag">Estilo de vida</span>
+                            <a href="#">
+                                <h3 class="text-xl title-limit-minor">
+                                    Cuidados do Ozzy, bulldog fofo de Byron Powell
+                                </h3>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="grid grid-col gap-16">
+                        <div>
+                            <img src="./assets/images/16pinz.jpg" alt="Foto da Yasmin e Jade mostrando os looks">
+                        </div>
+                        <div>
+                            <span class="content-tag">Tendências</span>
+                            <a href="#">
+                                <h3 class="text-xl title-limit-minor">
+                                    Looks da inauguração exclusiva da Pinz
+                                </h3>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="grid grid-col gap-16">
+                        <div>
+                            <img src="./assets/images/17lookshow.jpg" alt="Foto das Bratz mostrando os looks">
+                        </div>
+                        <div>
+                            <span class="content-tag">Tendências</span>
+                            <a href="#">
+                                <h3 class="text-xl title-limit-minor">
+                                    Looks de estreia da banda
+                                </h3>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="grid grid-col gap-16">
+                        <div>
+                            <img src="./assets/images/18podergarotas.jpg" alt="Foto da Jade jogando baseball">
+                        </div>
+                        <div>
+                            <span class="content-tag">Esportes</span>
+                            <a href="#">
+                                <h3 class="text-xl title-limit-minor">
+                                    Vamos soltar o poder das garotas!
+                                </h3>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </aside>
     </main>
 
     <footer>
-
+        Inspirado no projeto original da <a href="https://app.rocketseat.com.br/journey/full-stack/contents">Rocketseat</a>, desenvolvido por <a href="https://www.linkedin.com/in/larissakmnakamura/">Larissa Nakamura</a>.
     </footer>
 </body>
 </html>

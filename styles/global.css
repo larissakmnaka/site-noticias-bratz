@@ -8,7 +8,7 @@
     --brand-color-light: #a74687;
     --brand-color-dark: #d3a98d;
     --bg-color: #49285b;
-    --stroke-color: #180323;
+    --stroke-color: #18032356;
     --text-color-primary: #f5e2ea;
     --text-color-secundary: #e9d4de;
 
@@ -47,12 +47,25 @@ h1, h2, h3 {
 }
 
 main {
-    margin-top: 40px;
-    gap: 80px;
+    margin-block: 40px;
+    row-gap: 80px;
+    column-gap: 32px;
+
+    grid-template-columns: 2fr 1.4fr;
+
+    grid-template-areas:
+    "featured featured"
+    "weekly weekly"
+    "highlight aside";
 }
 
 main img {
     width: 100%;
+}
+
+img:hover {
+    opacity: 80%;
+    cursor: pointer;
 }
 
 .card {
@@ -94,4 +107,11 @@ main img {
     letter-spacing: 0.04em;
     color: var(--text-color-primary);
     box-shadow: 0px 4px 16px rgba(24, 3, 35, 0.25);
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    padding-block: 80px;
+    border-top: 1px solid var(--stroke-color);
 }
